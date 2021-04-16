@@ -1,0 +1,127 @@
+header {
+  align-items: center;
+
+  .arrow {
+    position: absolute;
+    left: 10.367px;
+    bottom: 19.467px;
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}
+.pic{
+  img{
+    height: 213.35px;
+  }
+}
+section {
+  border-radius: 30px 30px 0 0;
+  background-color: #f8f8f8;
+  position: relative;
+  top: -34px;
+  .titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    h2 {
+      margin-top: 0px;
+      padding-top: 34px;
+      padding-left: 15px;
+      font-family: shrikhand;
+      font-size: 1.5rem;
+      margin-bottom: 0px;
+    }
+    i {
+      font-size: 1.5rem;
+    }
+    .full {
+      display: none;
+    }
+  }
+  article {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2.5rem;
+    h3 {
+      text-transform: uppercase;
+      font-weight: 100;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    hr {
+      color: #99e2d0;
+      border-left-width: 0;
+      border-right-width: 0;
+      border-top-width: 0;
+      border-bottom-width: 3px;
+      width: 40px;
+      margin: 0;
+    }
+  }
+}
+
+.item {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 1rem;
+  justify-content: space-between;
+  box-shadow: 0px 0px 4px #8d8d8d;
+  padding-left: 1rem;
+
+  .item-check {
+    display: none;
+    background-color: #99e2d0;
+    border-radius: 0 20px 20px 0;
+    i {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding-left: 1rem;
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+  .item-details {
+    width: 100%;
+  }
+}
+.item-details {
+  h4 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .item-details-price {
+    display: flex;
+    justify-content: space-between;
+    p {
+      overflow: hidden;
+      max-width: 230px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .price {
+      font-weight: bold;
+      margin-right: 1rem;
+    }
+  }
+}
+.command {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+  button{
+    border: unset;
+    padding: 0.8rem;
+    background: linear-gradient(#9356dc, 50%, #ff79da);
+    border-radius: 30px;
+    color: #eee;
+    font-weight: 500;
+    font-size: 13px;
+    box-shadow: 0px 4px 7px #8d8d8d;
+  }
+}
+footer{
+    margin-top: -34px;
+}
