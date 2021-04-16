@@ -89,6 +89,7 @@ section article hr {
 .item-details h4 {
   font-size: 1rem;
   margin-bottom: 0;
+  max-width: 252px;
 }
 .item-details .item-details-price {
   display: flex;
