@@ -1,0 +1,6 @@
+a {
+  @include link;
+    img {
+      @include img-link-ratio;
+    }
+  }

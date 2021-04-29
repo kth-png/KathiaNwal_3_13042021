@@ -1,0 +1,42 @@
+figure {
+    background-color: $bg-figure;
+    border-radius: 10px;
+    margin: 14px 20px 32px 20px;
+    position: relative;
+  }
+  
+  .restaurants {
+    background-color: #eee;
+    padding-bottom: 1rem;
+    h1 {
+      padding-top: 2rem;
+      margin-left: 10px;
+    }
+  }
+  .new {
+    background-color: #99e2d0;
+    color: #528f80;
+    width: min-content;
+    padding: 4px 8px 4px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+    position: absolute;
+    top: 4.5px;
+    right: 18.617px;
+  }
+  figcaption {
+    position: relative;
+    h2 {
+      display: inherit;
+      font-size: 1rem;
+      padding-left: 10px;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 0.8rem;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      margin-top: 0.3rem;
+      font-weight: 100;
+    }
+  }

@@ -1,0 +1,22 @@
+.empty {
+  font-size: 20px;
+  @include icon-position;
+}
+
+.full {
+  display: none;
+ @include icon-color;
+  font-size: 20px;
+  @include icon-position;
+}
+
+#post{
+
+&:hover .empty{
+    display: none;
+}
+
+&:hover .full{
+    display:block;
+}
+}

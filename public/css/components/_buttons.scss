@@ -1,0 +1,23 @@
+i {
+    padding-right: 1em;
+  }
+
+ button {
+    border: unset;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: $linear-gradient;
+    opacity: 0.9;
+    border-radius: 30px;
+    color: $bg-figure;
+    font-weight: 500;
+    font-size: 12px;
+    @include shadow;
+    @include btn-transition;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+ 

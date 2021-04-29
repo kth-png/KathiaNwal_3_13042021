@@ -1,0 +1,17 @@
+img {
+  @include img-ratio;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @include shadow;
+  position: relative;
+
+  img {
+    padding: 1rem;
+    width: 45%;
+  }
+}
+

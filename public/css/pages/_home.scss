@@ -1,0 +1,73 @@
+.bloc-info > div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bloc-info__localisation {
+    background-color: $background-dark;
+    font-weight: 500;
+    align-items: center;
+    color: $text-color;
+    font-size: 0.8rem;
+  
+    .map {
+      font-size: 1rem;
+    }
+  }
+  
+  .bloc-info__exploration {
+    flex-direction: column;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    background-color: lighten($background-dark, 3);
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    align-items: center;
+    h1{
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    a {
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+   
+    p{
+      margin-top:0;
+      font-weight: lighter;
+    }
+  }
+
+  .bloc-info__fonctionnement {
+    flex-direction: column;
+    h1 {
+      margin-left: 10px;
+    }
+    .fonctionnement {
+      display: flex;
+      background-color: #eee;
+      align-items: center;
+      margin-left: 30px;
+      margin-right: 20px;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      &:hover {
+        background-color: lighten($primary-color, 35);
+        &>.secondary{
+        color: $primary-color;
+        }
+      }
+    }
+    .num-rel {
+        position: relative;
+        border-radius: 30px;
+        padding: 3px 0px 3px 6px;
+        font-size: 10px;
+        width: 12px;
+        align-self: center;
+        left: -10px;
+        background-color: #9356dc;
+        color: #eee;
+      }
+    }
