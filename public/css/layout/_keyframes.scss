@@ -1,55 +1,57 @@
-@keyframes loader{
-    0% {
-       transform:translateY(0%);
-      opacity:1;
-      z-index:1000;
+@keyframes loader {
+  0% {
+    transform: translateY(100%);
+  }
+  25% {
+    transform: translateY(200%);
+  }
 
-     }
-     25% {
-       transform:translateY(200%);
-       opacity:1;
-       z-index:1001;
-     }
-    
-     75% {
-       transform:translateY(-200%);
-       opacity:1;
-       z-index:1001;
-     }
-     100% {
-       transform:translateY(100%);
-       z-index:-1001;
-     }
-     
-   }
-   
-   @keyframes loading-box{
-     0%{
-       transform:rotate(90deg);
-       
-     }
-     50%{
-       transform:rotate(-180deg);
-     }
-     100%{
-       transform:rotate(360deg);
-     }
-   }
-   
-   @keyframes item-load{
-     1%{
-       z-index:1000;
-       opacity: .9;
-       background-color: whitesmoke;
-     }
-     50%{
-         z-index: 1000;
-        opacity: .8;
-background-color: whitesmoke;
-     }
-    
-     100%{
-       opacity:0;
-      
-     }
-   }
+  75% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes loading-box {
+  0% {
+    transform: rotate(-180deg);
+  }
+  50%{
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes item-load {
+  0% {
+    z-index: 1000;
+    opacity: 0.9;
+    background-color: whitesmoke;
+  }
+  50% {
+    z-index: 1000;
+    opacity: 0.7;
+    background-color: whitesmoke;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes menu-loading {
+  0% {
+    transform: translateY(1.5rem) scaleZ(0.4);
+  opacity: 0;
+  }
+50%{
+  opacity:.5;
+}
+  100% {
+    transform: translateY(0) scaleZ(1);
+opacity:1;
+  }
+}

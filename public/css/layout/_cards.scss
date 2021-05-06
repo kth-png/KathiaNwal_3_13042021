@@ -1,12 +1,14 @@
 figure {
     background-color: $bg-figure;
+    @include shadow ($shadow-color-hover);
     border-radius: 10px;
     margin: 14px 20px 32px 20px;
     position: relative;
+    flex:1;
   }
   
   .restaurants {
-    background-color: #eee;
+    background-color: #F2F2F2;
     padding-bottom: 1rem;
     h1 {
       padding-top: 2rem;

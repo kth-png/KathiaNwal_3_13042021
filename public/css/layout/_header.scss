@@ -1,12 +1,16 @@
 header {
   display: flex;
   justify-content: center;
-  @include shadow;
   flex-direction: column;
-  
+
   img {
-    padding: 1rem 6rem;
+    padding: 1rem 0rem;
+  }
+  .logo{
+    display: flex;
     position: relative;
+    @include shadow($shadow-color-hover);
+    justify-content: center;
   }
 }
 .header__localisation {
@@ -16,7 +20,10 @@ header {
   justify-content: center;
   align-items: center;
   color: $text-color;
-  font-size: 0.8rem;
+  p {
+    font-size: 1rem;
+    margin-left: 1%;
+  }
 
   .map {
     font-size: 1rem;

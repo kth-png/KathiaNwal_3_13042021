@@ -1,7 +1,7 @@
 #post {
   i {
     font-size: 1.5rem;
-    transition-duration:20ms;
+    transition-duration: 20ms;
   }
   .full {
     @include icon-color;
@@ -22,11 +22,15 @@ figcaption div {
   .full {
     @include icon-position;
     font-size: 20px;
+    margin-right: 1rem;
   }
 }
 
 .titre div {
-  .empty {
+  .empty,
+  .full {
     position: absolute;
+    margin-left: -3rem;
+    margin-top: -1.2rem;
   }
 }

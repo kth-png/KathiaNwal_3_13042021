@@ -14,7 +14,7 @@
 
 @mixin img-link-ratio {
   @include img-ratio;
-  max-height: 160px;
+  height: 160px;
   border-radius: 10px 10px 0 0;
   margin-bottom: 0.5rem;
 }

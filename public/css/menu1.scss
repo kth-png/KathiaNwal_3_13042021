@@ -17,9 +17,8 @@
 
 .arrow {
   position: absolute;
-  left: 10.367px;
-  top: 18px;
   z-index: 2;
+  margin-left: 1rem;
   i {
     font-size: 1.2rem;
   }
@@ -27,7 +26,7 @@
 
 .pic {
   img {
-    height: 213.35px;
+    height: 213px;
     @include img-ratio;
   }
 }
@@ -80,7 +79,12 @@ section {
   border-radius: 10px;
   justify-content: space-between;
   transition-duration: 500ms;
-  @include shadow;
+  @include shadow($shadow-color-hover);
+  animation: menu-loading 2s ease-in-out;
+  animation-fill-mode: forwards;
+  perspective: 300px;
+  opacity: 0;
+  flex: 0.5;
   &:hover {
     padding-right: 0;
   }
@@ -117,6 +121,15 @@ section {
     }
   }
 }
+.item__delay1 {
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
+}
+.item__delay2 {
+  animation-delay: 400ms;
+  animation-fill-mode: forwards;
+}
+
 .item-details {
   white-space: nowrap;
   overflow: hidden;
@@ -154,5 +167,22 @@ footer {
   margin-top: -34px;
 }
 
-
-
+@media all and (min-width: 790px) {
+  .arrow {
+    position: unset;
+    align-self: center;
+  }
+  .meal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  section {
+    margin: 0 2rem;
+    article {
+      margin: 0;
+      width: 30%;
+    }
+  }
+}
