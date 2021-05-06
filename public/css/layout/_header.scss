@@ -1,17 +1,24 @@
-img {
-  @include img-ratio;
-}
-
 header {
-  width: 100%;
   display: flex;
   justify-content: center;
   @include shadow;
-  position: relative;
-
+  flex-direction: column;
+  
   img {
-    padding: 1rem;
-    width: 45%;
+    padding: 1rem 6rem;
+    position: relative;
   }
 }
+.header__localisation {
+  display: flex;
+  background-color: $background-dark;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  color: $text-color;
+  font-size: 0.8rem;
 
+  .map {
+    font-size: 1rem;
+  }
+}

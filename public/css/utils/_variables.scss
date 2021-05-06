@@ -3,5 +3,8 @@ $background-dark: #eee;
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+$shadow-color:#e4e4e4;
+$bg-grey:#f5f5f5;
+$shadow-color-hover: darken($shadow-color, 20%);
 $bg-figure:white;
 $linear-gradient:linear-gradient($secondary-color, 25%, $primary-color 100%);

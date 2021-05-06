@@ -1,5 +1,5 @@
-@mixin shadow {
-  box-shadow: 0px 0px 7px #8d8d8d;
+@mixin shadow($color: $shadow-color) {
+  box-shadow: 0px 4px 8px $color;
 }
 
 @mixin img-ratio {
@@ -13,6 +13,7 @@
 }
 
 @mixin img-link-ratio {
+  @include img-ratio;
   max-height: 160px;
   border-radius: 10px 10px 0 0;
   margin-bottom: 0.5rem;
@@ -20,7 +21,9 @@
 
 @mixin btn-transition {
   transform: scale(1);
-  transition: transform 200ms;
+  opacity: 1;
+  transition: transform 300ms;
+ 
 }
 
 @mixin icon-position {
@@ -34,4 +37,10 @@
   background-clip:text;
   -webkit-background-clip:text;
   color:transparent
+}
+
+@mixin desktop-only {
+  @media screen and (min-width: map-get($breakpoints, desktop)){
+
+  }
 }
