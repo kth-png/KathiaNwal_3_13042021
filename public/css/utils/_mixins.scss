@@ -34,13 +34,7 @@
 
 @mixin icon-color {
   background:-webkit-linear-gradient(top, $primary-color 30%, $secondary-color 70%);
-  background-clip:text;
   -webkit-background-clip:text;
-  color:transparent
-}
-
-@mixin desktop-only {
-  @media screen and (min-width: map-get($breakpoints, desktop)){
-
-  }
+  color:transparent;
+  
 }

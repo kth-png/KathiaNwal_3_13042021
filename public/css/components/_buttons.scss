@@ -3,7 +3,7 @@ i {
     cursor: pointer;
   }
 
- button {
+ .btn {
    cursor: pointer;
     border: unset;
     padding-top: 0.8rem;
@@ -14,7 +14,6 @@ i {
     border-radius: 30px;
     color: $bg-figure;
     font-weight: 500;
-    font-size: 12px;
     @include shadow;
     @include btn-transition;
     &:hover{

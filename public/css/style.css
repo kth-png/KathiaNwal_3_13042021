@@ -9,6 +9,10 @@ body {
   color: #363636;
 }
 
+.titre {
+  font-family: 'Shrikhand', cursive;
+}
+
 @-webkit-keyframes loader {
   0% {
     -webkit-transform: translateY(100%);
@@ -290,7 +294,7 @@ i {
   cursor: pointer;
 }
 
-button {
+.btn {
   cursor: pointer;
   border: unset;
   padding-top: 0.8rem;
@@ -302,7 +306,6 @@ button {
   border-radius: 30px;
   color: white;
   font-weight: 500;
-  font-size: 12px;
   -webkit-box-shadow: 0px 4px 8px #e4e4e4;
           box-shadow: 0px 4px 8px #e4e4e4;
   -webkit-transform: scale(1);
@@ -314,7 +317,7 @@ button {
   transition: transform 300ms, -webkit-transform 300ms;
 }
 
-button:hover {
+.btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0px 4px 8px #b1b1b1;
@@ -336,15 +339,14 @@ a img {
   margin-bottom: 0.5rem;
 }
 
-#post i {
+.post i {
   font-size: 1.5rem;
   -webkit-transition-duration: 20ms;
           transition-duration: 20ms;
 }
 
-#post .full {
+.post .full {
   background: -webkit-linear-gradient(top, #9356DC 30%, #FF79DA 70%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
@@ -354,11 +356,11 @@ a img {
           transition-timing-function: ease-in;
 }
 
-#post:hover .empty {
+.post:hover .empty {
   visibility: hidden;
 }
 
-#post:hover .full {
+.post:hover .full {
   opacity: 1;
 }
 
@@ -523,7 +525,7 @@ figcaption div .full {
 .bloc-info__fonctionnement .num-rel {
   position: relative;
   border-radius: 30px;
-  padding: 3px 0px 3px 6px;
+  padding: 4px 0px 3px 6px;
   font-size: 10px;
   width: 12px;
   -ms-flex-item-align: center;
